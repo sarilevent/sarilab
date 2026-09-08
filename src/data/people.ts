@@ -18,7 +18,7 @@ export const people = [
   {
     name: "Postdoctoral Researcher",
     role: "Open position",
-    bio: "An immediate postdoctoral research position is available. We are seeking a motivated postdoctoral researcher who will play a key role in developing and leading the wet-lab component of our research program while working closely with a team of computational scientists. This position offers a unique opportunity to help establish a new wet laboratory from the ground up and contribute to innovative research aimed at understanding the molecular mechanisms underlying neurodegenerative diseases.",
+    bio: "An immediate postdoctoral research position is available. We are seeking a motivated postdoctoral researcher who will play a key role in developing and leading the wet-lab component of our research program while working closely with a team of computational scientists.",
   },
   {
     name: "Graduate Students",
