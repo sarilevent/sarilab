@@ -17,7 +17,7 @@ export const site = {
   profilePhoto: "https://www.uh.edu/nsm/biology-biochemistry/people/profiles/levent-sari/profile-photo.jpg",
   researchFigure: "https://www.uh.edu/nsm/biology-biochemistry/people/profiles/levent-sari/sari-fig-1.jpg",
   departmentAddress: [
-    "Science & Research Building 2",
+    "Science & Engineering Research Center (SERC)",
     "3455 Cullen Blvd, Room 4024",
     "Houston, Texas 77204-5001",
   ],
