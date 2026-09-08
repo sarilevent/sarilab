@@ -21,7 +21,7 @@ export const people = [
     bio: "An immediate postdoctoral research position is available. We are seeking a motivated postdoctoral researcher who will play a key role in developing and leading the wet-lab component of our research program while working closely with a team of computational scientists.",
   },
   {
-    name: "Graduate Students",
+    name: "Graduate & Undergraduate Students",
     role: "Future lab members",
     bio: "Prospective students interested in computational biophysics, structural biology, machine learning, protein aggregation, or experimental biophysics are encouraged to contact us.",
   },
