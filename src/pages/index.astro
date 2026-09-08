@@ -4,93 +4,283 @@ import ResearchCard from "../components/ResearchCard.astro";
 import { site } from "../data/site";
 ---
 
-<BaseLayout title={`${site.name} | ${site.institution}`} description={site.description}>
+<BaseLayout
+  title={`${site.name} | ${site.institution}`}
+  description={site.description}
+>
+
+  <!-- HERO SECTION -->
   <section class="hero">
-    <div class="container hero-grid">
+    <div class="container hero-centered">
       <div class="hero-copy">
-        <p class="eyebrow">Computational biophysics · AI · Experiments</p>
-        <h1>Uncovering the molecular features driving neurodegenerative diseases</h1>
+        <p class="eyebrow">
+          Computational Biophysics · Artificial Intelligence · Experiments
+        </p>
+
+        <h1>
+          Understanding the molecular origins of neurodegenerative diseases
+        </h1>
+
         <p class="hero-lede">
           We combine AI and physics-based modeling, molecular simulations,
           and biophysical/biochemical experiments to uncover the molecular
           mechanisms, transition states, and critical seed structures that
           drive neurodegenerative protein aggregation.
         </p>
-        <div class="hero-actions">
-          <a class="button primary" href="/research">Explore our research</a>
-          <a class="button secondary" href="/join">Join the lab</a>
-        </div>
-      </div>
 
-      <div class="hero-visual" aria-label="Abstract molecular visualization">
-        <div class="orb orb-a"></div>
-        <div class="orb orb-b"></div>
-        <div class="orb orb-c"></div>
-        <div class="orb orb-d"></div>
-        <div class="bond bond-1"></div>
-        <div class="bond bond-2"></div>
-        <div class="bond bond-3"></div>
-        <div class="visual-label">
-          <span>MOLECULAR</span>
-          <strong>MECHANISMS</strong>
+        <div class="hero-actions">
+          <a class="button primary" href="/research">
+            Explore our research
+          </a>
+
+          <a class="button secondary" href="/join">
+            Join the lab
+          </a>
         </div>
       </div>
     </div>
   </section>
 
+
+  <!-- MAIN RESEARCH OVERVIEW IMAGE -->
+  <section class="research-overview">
+    <div class="container">
+
+      <div class="research-image-wrapper">
+        <img
+          src="/images/sari-lab-research.png"
+          alt="Sari Lab research overview showing amyloid formation mechanisms, AI binder designs for amyloids, RNA in amyloid formation, and membrane fusion mechanisms in neurotransmitter release"
+          class="research-overview-image"
+          loading="eager"
+        />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- RESEARCH DIRECTIONS -->
   <section class="section">
     <div class="container section-heading">
+
       <div>
         <p class="eyebrow">Research directions</p>
-        <h2>From molecular mechanism to molecular design.</h2>
+
+        <h2>
+          From molecular mechanisms to molecular design
+        </h2>
       </div>
+
       <p>
-        Our work connects physics-based simulation with modern AI methods
-        and targeted experiments.
+        Our work connects physics-based molecular simulations,
+        modern artificial intelligence methods, and targeted
+        biochemical and biophysical experiments.
       </p>
+
     </div>
+
 
     <div class="container research-grid">
-      <ResearchCard number="01" title="Tau, Amyloid-β & α-Synuclein"
-        text="Molecular mechanisms of nucleation, oligomerization, fibril formation, and disease-associated structural polymorphism." />
-      <ResearchCard number="02" title="Molecular Dynamics"
-        text="Atomistic MD, enhanced sampling, free-energy methods, and conformational ensemble analysis." />
-      <ResearchCard number="03" title="AI Protein & Ligand Design"
-        text="AI-guided design of proteins and peptides that recognize or modulate disease-relevant molecular states." />
-      <ResearchCard number="04" title="Experimental Validation"
-        text="Biochemical and biophysical assays to test computational predictions and designed molecules." />
+
+      <ResearchCard
+        number="01"
+        title="Amyloid Formation Mechanisms"
+        text="We investigate the molecular events that drive nucleation, oligomerization, fibril formation, and disease-associated structural polymorphism in tau, amyloid-β, α-synuclein, and related amyloid-forming proteins."
+      />
+
+      <ResearchCard
+        number="02"
+        title="AI Binder Designs for Amyloids"
+        text="We use AI-guided protein, peptide, and ligand design to develop binders that recognize disease-relevant amyloid structures for potential diagnostic and therapeutic applications."
+      />
+
+      <ResearchCard
+        number="03"
+        title="RNA in Amyloid Formation"
+        text="We investigate how RNA interacts with intrinsically disordered proteins and amyloid-forming proteins, and how these interactions influence aggregation pathways and fibril formation."
+      />
+
+      <ResearchCard
+        number="04"
+        title="Membrane Fusion & Neurotransmitter Release"
+        text="We study the molecular mechanisms of synaptic membrane fusion and the protein interactions that control neurotransmitter release."
+      />
+
     </div>
   </section>
 
+
+  <!-- APPROACH -->
   <section class="section contrast">
+
     <div class="container split">
+
       <div>
         <p class="eyebrow">Our approach</p>
-        <h2>Physics + artificial intelligence + experiment</h2>
+
+        <h2>
+          Physics + artificial intelligence + experiment
+        </h2>
       </div>
+
+
       <div class="stack">
+
         <p>
-          Protein aggregation is a multiscale problem. We study it by combining
-          detailed molecular models with computational design and experiments.
+          Many important biological processes involve highly dynamic molecular
+          systems that cannot be understood from a single static structure.
+          We use atomistic molecular simulations and advanced computational
+          approaches to characterize the conformational states and molecular
+          interactions that drive these processes.
         </p>
+
         <p>
-          Our goal is not only to describe aggregate structures, but to identify
-          the transient molecular states and interactions that initiate disease-relevant assembly.
+          We combine molecular dynamics simulations, enhanced sampling,
+          free-energy calculations, AI-based molecular design, and experimental
+          validation to identify transient molecular states and interactions
+          that are difficult to characterize using conventional approaches alone.
         </p>
-        <a class="text-link" href="/research">Read about our research →</a>
+
+        <p>
+          Our long-term goal is to translate molecular-level understanding into
+          new strategies for diagnosing, preventing, and treating
+          neurodegenerative diseases.
+        </p>
+
+        <a class="text-link" href="/research">
+          Read about our research →
+        </a>
+
       </div>
+
     </div>
+
   </section>
 
+
+  <!-- JOIN THE LAB -->
   <section class="section">
+
     <div class="container cta">
-      <p class="eyebrow">Opportunities</p>
-      <h2>Interested in joining the Sari Lab?</h2>
-      <p>
-        We welcome inquiries from postdoctoral researchers, graduate students,
-        undergraduates, and collaborators interested in computational and experimental biophysics.
+
+      <p class="eyebrow">
+        Opportunities
       </p>
-      <a class="button primary" href="/join">View opportunities</a>
+
+      <h2>
+        Interested in joining the Sari Lab?
+      </h2>
+
+      <p>
+        We welcome inquiries from postdoctoral researchers,
+        graduate students, undergraduate students, and collaborators
+        interested in computational biophysics, artificial intelligence,
+        protein aggregation, molecular design, and experimental biophysics.
+      </p>
+
+      <a class="button primary" href="/join">
+        View opportunities
+      </a>
+
     </div>
+
   </section>
+
+
+  <!-- PAGE-SPECIFIC STYLES -->
+  <style>
+
+    .hero-centered {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-copy {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .hero-copy h1 {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-lede {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+
+    /* Research infographic */
+
+    .research-overview {
+      background: #ffffff;
+      padding: 1rem 0 5rem;
+    }
+
+    .research-image-wrapper {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .research-overview-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 20px;
+
+      box-shadow:
+        0 15px 35px rgba(0, 30, 70, 0.08),
+        0 4px 12px rgba(0, 30, 70, 0.05);
+    }
+
+
+    /* Responsive adjustments */
+
+    @media (max-width: 900px) {
+
+      .research-overview {
+        padding: 1rem 0 3rem;
+      }
+
+      .research-overview-image {
+        border-radius: 14px;
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .research-overview-image {
+        border-radius: 10px;
+      }
+
+    }
+
+  </style>
+
 </BaseLayout>
