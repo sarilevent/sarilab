@@ -18,7 +18,7 @@ export const site = {
   researchFigure: "https://www.uh.edu/nsm/biology-biochemistry/people/profiles/levent-sari/sari-fig-1.jpg",
   departmentAddress: [
     "Science & Research Building 2",
-    "3455 Cullen Blvd, Room 342",
+    "3455 Cullen Blvd, Room 4024",
     "Houston, Texas 77204-5001",
   ],
   departmentPhone: "713-743-4645",
