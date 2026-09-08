@@ -9,7 +9,7 @@ export const people = [
     email: site.email,
     education: site.education,
     image: site.profilePhoto,
-    bio: "Dr. Sari leads an interdisciplinary program that combines computational biophysics, molecular simulation, AI-guided molecular design, and biochemical/biophysical experiments to study protein aggregation and neurodegenerative disease mechanisms.",
+    bio: "I received my Ph.D. in Computational Quantum Chemistry from the University of Georgia, where I worked with Henry F. Schaefer, and subsequently completed my postdoctoral training at the University of Michigan, working with Ioan Andricioaei. Before joining the University of Houston, I spent approximately nine years as a Senior Research Scientist in the Department of Bioinformatics at UT Southwestern Medical Center.",
     links: [
       { label: "UH Faculty Profile", href: site.facultyProfile },
       { label: "Google Scholar", href: site.googleScholar },
