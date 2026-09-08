@@ -4,17 +4,25 @@ import { site } from "../data/site";
 
 <footer class="site-footer">
   <div class="container footer-grid">
+
     <div>
       <strong>{site.name}</strong>
-      <p>{site.department}<br />{site.institution}</p>
-      <p>{site.office}</p>
+      <p>
+        {site.department}<br />
+        {site.institution}
+      </p>
     </div>
+
     <div>
       {site.departmentAddress.map((line) => <p>{line}</p>)}
       <p>{site.departmentPhone}</p>
-      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      <p>
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
     </div>
+
   </div>
+
   <div class="container footer-bottom">
     <span>© {new Date().getFullYear()} {site.name}</span>
     <span>Built with Astro</span>
