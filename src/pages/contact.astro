@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Contact | Sari Lab">
+  <PageHero
+    eyebrow="Contact"
+    title="Sari Lab at the University of Houston."
+    intro="Faculty office and departmental contact information."
+  />
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2>Levent Sari</h2>
+        <p>{site.title}</p>
+        <p>{site.department}</p>
+        <p>Research Division: {site.researchDivision}</p>
+      </div>
+
+      <div>
+        <h2>Faculty office</h2>
+        <p>{site.office}</p>
+        <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      </div>
+
+      <div>
+        <h2>Department</h2>
+        {site.departmentAddress.map((line) => <p>{line}</p>)}
+        <p>{site.departmentPhone}</p>
+      </div>
+    </div>
+
+    <div class="container profile-links contact-links">
+      <a class="button primary" href={site.facultyProfile} target="_blank" rel="noreferrer">UH Faculty Profile</a>
+      <a class="button secondary" href={site.googleScholar} target="_blank" rel="noreferrer">Google Scholar</a>
+    </div>
+  </section>
+</BaseLayout>

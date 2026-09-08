@@ -1,0 +1,21 @@
+---
+import { nav, site } from "../data/site";
+const pathname = Astro.url.pathname;
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <span class="brand-name">{site.name}</span>
+      <span class="brand-sub">{site.institution}</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      {nav.map((item) => (
+        <a href={item.href} class:list={{ active: pathname === item.href }}>
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>

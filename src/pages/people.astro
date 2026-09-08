@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import { people } from "../data/people";
+---
+
+<BaseLayout title="People | Sari Lab">
+  <PageHero
+    eyebrow="People"
+    title="Our group"
+    intro="The Sari Lab combines computational and experimental approaches to study protein aggregation, molecular biophysics, and neurodegenerative disease."
+  />
+
+  <section class="section">
+    <div class="container people-grid">
+      {people.map((person, index) => (
+        <article class:list={["person-card", { "pi-card": index === 0 }]}>
+          <div class="person-photo">
+            {person.image ? (
+              <img src={person.image} alt={person.name} loading="eager" referrerpolicy="no-referrer" />
+            ) : (
+              <span>{person.name.split(" ").map((x) => x[0]).slice(0, 2).join("")}</span>
+            )}
+          </div>
+
+          <div class="person-info">
+            <p class="person-role">{person.role}</p>
+            <h2>{person.name}</h2>
+            {person.division && <p><strong>Research Division:</strong> {person.division}</p>}
+            {person.office && <p><strong>Office:</strong> {person.office}</p>}
+            {person.email && <p><strong>Email:</strong> <a href={`mailto:${person.email}`}>{person.email}</a></p>}
+            {person.education && (
+              <div class="education-block">
+                <strong>Education</strong>
+                <ul>
+                  {person.education.map((degree) => <li>{degree}</li>)}
+                </ul>
+              </div>
+            )}
+            <p>{person.bio}</p>
+            {person.links && (
+              <div class="profile-links">
+                {person.links.map((link) => (
+                  <a class="button secondary" href={link.href} target="_blank" rel="noreferrer">{link.label}</a>
+                ))}
+              </div>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

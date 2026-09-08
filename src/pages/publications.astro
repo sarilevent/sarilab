@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import { publications } from "../data/publications";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Publications | Sari Lab">
+  <PageHero
+    eyebrow="Selected publications"
+    title="Selected publications from the UH faculty profile."
+    intro="The publications below are the selected papers listed on Levent Sari's University of Houston faculty profile."
+  />
+
+  <section class="section">
+    <div class="container publication-list">
+      {publications.map((pub) => (
+        <article class="publication">
+          <div class="pub-year">{pub.year}</div>
+          <div>
+            <h2>{pub.title}</h2>
+            <p>{pub.authors}</p>
+            <p class="journal">{pub.journal}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <div class="container publications-footer">
+      <a class="button primary" href={site.googleScholar} target="_blank" rel="noreferrer">View Google Scholar profile</a>
+      <a class="button secondary" href={site.facultyProfile} target="_blank" rel="noreferrer">View UH faculty profile</a>
+    </div>
+  </section>
+</BaseLayout>

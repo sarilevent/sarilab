@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Research | Sari Lab" description={site.description}>
+  <PageHero
+    eyebrow="Research interests"
+    title="Molecular mechanisms of protein aggregation and neurodegenerative disease."
+    intro="We integrate AI and physics-based modeling, molecular simulation, and biophysical/biochemical experiments to identify the molecular mechanisms, transition states, and critical seed structures that drive aggregation of intrinsically disordered proteins."
+  />
+
+  <section class="section">
+    <div class="container research-intro-grid">
+      <div class="research-copy">
+        <p class="eyebrow">Overall research program</p>
+        <h2>From disordered proteins to disease-relevant molecular mechanisms.</h2>
+        <p>
+          Our research focuses on intrinsically disordered proteins associated with neurodegenerative disorders, including tau, amyloid-β, and α-synuclein. We combine computational and experimental approaches to determine how transient conformations and early assemblies give rise to aggregation, with the broader goal of developing mechanistic insight that can guide diagnostic and therapeutic strategies.
+        </p>
+        <p>
+          A central goal is to identify the transition-state-like structures and critical molecular seeds that initiate amyloid formation, rather than focusing only on mature fibrils after the aggregation process is already well established.
+        </p>
+      </div>
+      <figure class="research-figure">
+        <img src={site.researchFigure} alt="Schematic of the amyloid aggregation lag, growth, and plateau phases" loading="lazy" referrerpolicy="no-referrer" />
+        <figcaption>Research focus on the early lag or “dark” phase of amyloid formation.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section contrast">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">The dark phase</p>
+        <h2>Resolving the earliest molecular events in amyloid formation.</h2>
+      </div>
+      <div class="stack">
+        <p>
+          Amyloid formation typically includes an initial lag phase followed by a growth phase in which monomers are incorporated into elongating fibrils. The elongation process is comparatively better understood, while the early lag phase remains difficult to characterize because the relevant oligomers are transient, heterogeneous, and structurally dynamic.
+        </p>
+        <p>
+          We refer to this poorly resolved initial period as the “dark phase.” Our strategy is to combine AI, physics-based simulations, and experiments so that the structural and dynamical features of these early species can be studied at molecular resolution.
+        </p>
+        <p>
+          Current therapeutic approaches often act on mature or near-mature amyloid assemblies. We aim instead to understand the critical transition states and early oligomeric seeds that initiate aggregation, and then use that information to design ligands with potential diagnostic or therapeutic value.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container research-detail-grid">
+      <article class="research-detail">
+        <span>01</span>
+        <h2>Tau, Amyloid-β & α-Synuclein</h2>
+        <p>We study aggregation-prone intrinsically disordered proteins that are central to major neurodegenerative diseases, with particular interest in early structural transitions, oligomerization, amyloid nucleation, and fibril formation.</p>
+      </article>
+
+      <article class="research-detail">
+        <span>02</span>
+        <h2>Molecular Dynamics & Enhanced Sampling</h2>
+        <p>We use atomistic molecular dynamics and advanced sampling/free-energy methods to characterize heterogeneous protein ensembles, transition pathways, oligomeric states, and molecular interactions that are difficult to observe directly.</p>
+      </article>
+
+      <article class="research-detail">
+        <span>03</span>
+        <h2>AI-Guided Protein & Ligand Design</h2>
+        <p>AI-based structure prediction and molecular design are combined with physics-based refinement to identify proteins, peptides, and ligands that can recognize or modulate disease-relevant molecular states.</p>
+      </article>
+
+      <article class="research-detail">
+        <span>04</span>
+        <h2>Biophysical & Biochemical Experiments</h2>
+        <p>Experimental measurements provide an essential counterpart to computation, allowing us to test aggregation mechanisms, characterize designed molecules, and validate molecular predictions.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section soft-section">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Complementary direction</p>
+        <h2>Amyloid-associated changes at synaptic membranes.</h2>
+      </div>
+      <div class="stack dark-text">
+        <p>
+          A complementary research direction examines how amyloid-associated molecular changes at synaptic membranes may contribute to synaptic dysfunction. Soluble amyloidogenic species have been linked to altered presynaptic vesicle trafficking, calcium-regulated membrane fusion, and neurotransmitter release.
+        </p>
+        <p>
+          We are interested in how these effects intersect with the SNARE fusion machinery and with the organization and dynamics of neuronal membranes. Understanding the molecular mechanism of synaptic membrane fusion provides an additional framework for investigating how amyloid formation can impair neuronal communication.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Join Us | Sari Lab">
+  <PageHero eyebrow="Join us"
+    title="Work with us on molecular mechanisms of neurodegenerative disease."
+    intro="We are interested in researchers who enjoy combining quantitative thinking, molecular science, computation, and experiment." />
+
+  <section class="section">
+    <div class="container opportunity-grid">
+      <article>
+        <p class="eyebrow">Postdoctoral researchers</p>
+        <h2>Computational and experimental opportunities</h2>
+        <p>Potential projects include atomistic simulation, enhanced sampling, amyloid aggregation, AI protein or peptide design, and experimental validation.</p>
+      </article>
+      <article>
+        <p class="eyebrow">Graduate students</p>
+        <h2>Interdisciplinary training</h2>
+        <p>Graduate students may develop expertise across computational biophysics, structural biology, machine learning, and protein aggregation.</p>
+      </article>
+      <article>
+        <p class="eyebrow">Undergraduates</p>
+        <h2>Research experience</h2>
+        <p>Motivated undergraduate students can inquire about research projects in scientific computing, molecular modeling, data analysis, or wet-lab work.</p>
+      </article>
+    </div>
+
+    <div class="container contact-box">
+      <h2>How to apply</h2>
+      <p>Send a short introduction, your CV, and a description of your research interests to <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+    </div>
+  </section>
+</BaseLayout>
