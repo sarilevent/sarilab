@@ -366,3 +366,32 @@ import { site } from "../data/site";
   </style>
 
 </BaseLayout>
+
+<script>
+  const openButton = document.getElementById("openResearchFigure");
+  const closeButton = document.getElementById("closeResearchFigure");
+  const lightbox = document.getElementById("researchLightbox");
+
+  if (
+    openButton instanceof HTMLElement &&
+    closeButton instanceof HTMLElement &&
+    lightbox instanceof HTMLDialogElement
+  ) {
+
+    openButton.addEventListener("click", () => {
+      lightbox.showModal();
+    });
+
+    closeButton.addEventListener("click", () => {
+      lightbox.close();
+    });
+
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) {
+        lightbox.close();
+      }
+    });
+
+  }
+</script>
+
