@@ -79,7 +79,7 @@ h3 { font-size: 1.35rem; line-height: 1.15; letter-spacing: -.02em; }
 .hero-visual {
   min-height: 500px;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
 
   border: none;
   border-radius: 0;
