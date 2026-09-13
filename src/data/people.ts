@@ -12,7 +12,7 @@ export const people = [
    bio:
   "I received my Ph.D. in Computational Quantum Chemistry from the University of Georgia, " +
   "where I worked with Henry F. Schaefer, and subsequently completed my postdoctoral training " +
-  "at the University of Michigan with Ioan Andricioaei. Before joining the University of Houston, " +
+  "at the University of Michigan with Ioan Andricioaei, working on DNA topology and topoisomerases. Before joining the University of Houston, " +
   "I spent approximately nine years as a Senior Research Scientist in the Department of Bioinformatics " +
   "at UT Southwestern Medical Center. At UTSW, my research focused primarily on the physical and biological " +
    "aspects of protein aggregation and amyloid formation, which are major hallmarks of neurodegenerative diseases. " +
