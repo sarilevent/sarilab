@@ -18,7 +18,7 @@ export const people = [
   "close research collaborations with Lukasz Joachimiak and Marc Diamond at the Center for Alzheimer’s " +
   "and Neurodegenerative Diseases, as well as with Jose Rizo-Rey in the Department of Biophysics. " +
   "I continue to collaborate closely with several of these colleagues on ongoing research projects.",
-   interests: "I like ",
+   interests: "I like tea, drinking tea, and having tea. Other than this, watching Messi and camping with my family and friends seem to make sense.. :)) ",
     links: [
       { label: "UH Faculty Profile", href: site.facultyProfile },
       { label: "Google Scholar", href: site.googleScholar },
