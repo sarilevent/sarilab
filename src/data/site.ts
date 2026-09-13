@@ -11,7 +11,7 @@ export const site = {
   location: "Houston, Texas",
   office: "Science & Engineering Research Center (SERC), 4024",
   email: "lsari@uh.edu",
-  education: ["Post-Doc., University of Michigan and UT-Southwestern", "Ph.D., Physical Chemistry, University of Georgia", "B.S., Chemistry/Physics, Bogazici University"],
+  education: ["Post-Doc., University of Michigan and UT-Southwestern", "Ph.D., Physical Chemistry, University of Georgia", "B.S., Chemistry & Physics, Bogazici University"],
   facultyProfile: "https://www.uh.edu/nsm/biology-biochemistry/people/profiles/levent-sari/",
   googleScholar: "https://scholar.google.com/citations?hl=en&user=l2BhCiMAAAAJ",
   profilePhoto: "https://www.uh.edu/nsm/biology-biochemistry/people/profiles/levent-sari/profile-photo.jpg",
