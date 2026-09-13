@@ -19,8 +19,6 @@ export const people = [
   "and Neurodegenerative Diseases, as well as with Jose Rizo-Rey in the Department of Biophysics. " +
   "I continue to collaborate closely with several of these colleagues on ongoing research projects.",
 
-  "I like ...",
-    
     links: [
       { label: "UH Faculty Profile", href: site.facultyProfile },
       { label: "Google Scholar", href: site.googleScholar },
