@@ -4,9 +4,9 @@ export const people = [
   {
     name: "Levent Sari, Ph.D.",
     role: site.title,
-    division: site.researchDivision,
+ /*   division: site.researchDivision,
     office: site.office,
-    email: site.email,
+    email: site.email, */
     education: site.education,
     image: site.profilePhoto,
     bio: "I received my Ph.D. in Computational Quantum Chemistry from the University of Georgia, where I worked with Henry F. Schaefer, and subsequently completed my postdoctoral training at the University of Michigan with Ioan Andricioaei. Before joining the University of Houston, I spent approximately nine years as a Senior Research Scientist in the Department of Bioinformatics at UT Southwestern Medical Center. At UTSW, I worked primarily in Milo Lin’s lab while developing close research collaborations with Lukasz Joachimiak and Marc Diamond at the Center for Alzheimer’s and Neurodegenerative Diseases, as well as with Jose Rizo-Rey in the Department of Biophysics. I continue to collaborate closely with several of these colleagues on ongoing research projects.",
