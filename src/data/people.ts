@@ -12,11 +12,11 @@ export const people = [
    bio:
   "I received my Ph.D. in Computational Quantum Chemistry from the University of Georgia, " +
   "where I worked with Henry F. Schaefer, and subsequently completed my postdoctoral training " +
-  "at the University of Michigan with Ioan Andricioaei, working on DNA topology and topoisomerases. Before joining UH, " +
+  "at the University of Michigan with Ioan Andricioaei, working on DNA topology & topoisomerases. Before joining UH, " +
   "I spent approximately nine years as a Senior Research Scientist in the Department of Bioinformatics " +
-  "at UT Southwestern Medical Center. At UTSW, my research focused primarily on the physical and biological " +
-   "aspects of protein aggregation and amyloid formation, which are major hallmarks of neurodegenerative diseases. " +
-   "While I worked primarily with Milo Lin, I also developed close research collaborations with Lukasz Joachimiak " + 
+  "at UT Southwestern Medical Center. At UTSW, my research focused primarily on " +
+   "protein aggregation and amyloid formation in neurodegenerative diseases, " +
+   "with Milo Lin and collaboratively with Lukasz Joachimiak " + 
    "and Marc Diamond at the Center for Alzheimer’s and Neurodegenerative Diseases, as well as with Jose Rizo-Rey " +
    "in the Department of Biophysics. I continue to collaborate with several of these colleagues on some of the ongoing research projects.",
    interests: "I like tea, drinking tea, and having tea! Other than this, watching Messi and camping with my family and friends seem to make sense..:)) ",
