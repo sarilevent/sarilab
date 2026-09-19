@@ -139,9 +139,17 @@ h3 { font-size: 1.35rem; line-height: 1.15; letter-spacing: -.02em; }
 
 .people-grid { display:grid;gap:18px; }
 .person-card {
-  display:grid;grid-template-columns:190px 1fr;gap:34px;padding:28px;
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);align-items:center;
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  column-gap: 34px;
+  row-gap: 10px;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  align-items: center;
 }
+
 .person-photo {
   width: 240px;
   aspect-ratio: 1;
