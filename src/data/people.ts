@@ -9,7 +9,7 @@ export const people = [
     email: site.email, */
     education: site.education,
   /*  image: site.profilePhoto, */
-    image: "levent-sari.jpg",
+    image: "/images/levent-sari.jpg",
    bio:
   "I received my Ph.D. in Computational Quantum Chemistry from the University of Georgia, " +
   "where I worked with Henry F. Schaefer, and subsequently completed my postdoctoral training " +
