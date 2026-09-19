@@ -143,7 +143,7 @@ h3 { font-size: 1.35rem; line-height: 1.15; letter-spacing: -.02em; }
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);align-items:center;
 }
 .person-photo {
-  width: 200px;
+  width: 240px;
   aspect-ratio: 1;
   border-radius: 14px;
   background: linear-gradient(145deg,#dfe4e8,#f7f8f9);
