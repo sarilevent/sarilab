@@ -137,7 +137,14 @@ h3 { font-size: 1.35rem; line-height: 1.15; letter-spacing: -.02em; }
 .research-detail h2 { font-size:2rem;margin-top:36px; }
 .research-detail p { color:var(--muted); }
 
-.people-grid { display:grid;gap:18px; }
+.people-grid {
+  display: grid;
+  gap: 18px;
+  width: min(94vw, 1500px);
+  max-width: none;
+  margin-inline: auto;
+}
+
 .person-card {
   display: grid;
   grid-template-columns: 190px 1fr;
