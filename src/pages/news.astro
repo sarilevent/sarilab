@@ -3,10 +3,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/PageHero.astro";
 
 const news = [
-   {
+  {
     date: "September 25th, 2026",
     title: "Welcome the first members of the Sari Lab!",
-   text: [
+    text: [
       "Ilayda Engin has joined the lab as our first Ph.D. student, and Sara Laroussi has joined as an undergraduate researcher.",
 
       "Ilayda received her B.S. in Biology from Hacettepe University and her M.Sc. in Biotechnology from Ankara University in Turkey. Her master’s research focused on the development of monoclonal and chimeric antibodies targeting the glutamine transporter ASCT2 and investigating their effects on tumor cell growth. Her work has resulted in scientific publications.",
@@ -22,6 +22,7 @@ const news = [
     title: "Sari Lab launches at the University of Houston",
     text: "Our new laboratory is beginning work at the interface of molecular simulation, AI-guided molecular design, and experimental biophysics."
   },
+
   {
     date: "2026",
     title: "We are recruiting",
@@ -33,14 +34,14 @@ const news = [
 <BaseLayout title="News | Sari Lab">
   <PageHero eyebrow="News" title="Lab updates" />
 
-<BaseLayout title="News | Sari Lab">
-  <PageHero eyebrow="News" title="Lab updates" />
-
   <section class="section">
     <div class="container news-list">
+
       {news.map((item) => (
         <article class="news-item">
+
           <p class="news-date">{item.date}</p>
+
           <h2>{item.title}</h2>
 
           {Array.isArray(item.text) ? (
@@ -53,5 +54,7 @@ const news = [
 
         </article>
       ))}
-    </div>
 
+    </div>
+  </section>
+</BaseLayout>
