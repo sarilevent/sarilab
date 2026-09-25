@@ -326,3 +326,16 @@ h3 { font-size: 1.35rem; line-height: 1.15; letter-spacing: -.02em; }
     max-width: 300px;
   }
 }
+
+/* News page — keep all news items fully visible */
+.news-item {
+  opacity: 1 !important;
+  visibility: visible !important;
+  filter: none !important;
+}
+
+.news-item h2,
+.news-item p {
+  opacity: 1 !important;
+}
+
