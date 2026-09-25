@@ -7,6 +7,8 @@ const news = [
     date: "September 25th, 2026",
     title: "Welcome the first members of the Sari Lab!",
    text: [
+      "Ilayda Engin has joined the lab as our first Ph.D. student, and Sara Laroussi has joined as an undergraduate researcher.",
+
       "Ilayda received her B.S. in Biology from Hacettepe University and her M.Sc. in Biotechnology from Ankara University in Turkey. Her master’s research focused on the development of monoclonal and chimeric antibodies targeting the glutamine transporter ASCT2 and investigating their effects on tumor cell growth. Her work has resulted in scientific publications.",
 
       "Sara is an undergraduate Biochemistry student pursuing her bachelor’s degree. She previously earned an Associate of Science (A.S.) degree from Lone Star College with a 4.0 GPA.",
@@ -31,15 +33,25 @@ const news = [
 <BaseLayout title="News | Sari Lab">
   <PageHero eyebrow="News" title="Lab updates" />
 
+<BaseLayout title="News | Sari Lab">
+  <PageHero eyebrow="News" title="Lab updates" />
+
   <section class="section">
     <div class="container news-list">
       {news.map((item) => (
         <article class="news-item">
           <p class="news-date">{item.date}</p>
           <h2>{item.title}</h2>
-          <p>{item.text}</p>
+
+          {Array.isArray(item.text) ? (
+            item.text.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))
+          ) : (
+            <p>{item.text}</p>
+          )}
+
         </article>
       ))}
     </div>
-  </section>
-</BaseLayout>
+
