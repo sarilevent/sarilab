@@ -26,11 +26,20 @@ export const people = [
       { label: "Google Scholar", href: site.googleScholar },
     ],
   },
+
+   {
+    name: "Ilayda Engin",
+    role: "Ph.D. Student",
+    image: "/images/ilayda.jpeg",
+    bio: "I am a Ph.D. student in the Biology and Biochemistry program at the University of Houston. I received my B.S. in Biology from Hacettepe University and my M.Sc. in Biotechnology at Ankara University. My master’s research focused on targeting glutamine metabolism by developing monoclonal and chimeric antibodies against the glutamine transporter ASCT2 and investigating their effects on tumor cell growth. I am now expanding my research into computational protein science in the Sari Lab, exploring protein structure and dynamics in the context of neurodegenerative diseases. Outside the lab, you’ll probably find me somewhere online as TheProteinBender or writing stories and building fictional worlds, because apparently the world we live in isn’t enough..",
+  },
+  
   {
     name: "Postdoctoral Researcher",
     role: "Open position",
     bio: "An immediate postdoctoral research position is available. We are seeking a motivated postdoctoral researcher who will play a key role in developing and leading the wet-lab component of our research program while working closely with a team of computational scientists.",
   },
+  
   {
     name: "Graduate Undergraduate Students",
     role: "Future lab members",
