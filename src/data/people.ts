@@ -37,7 +37,7 @@ export const people = [
      {
     name: "Sara Laroussi",
     role: "Undergraduate Student",
-    image: "/images/sara.jpeg",
+    image: "/images/Sara.jpeg",
     bio: "I am an undergraduate biochemistry student at the University of Houston. I am interested in developing my computational and experimental research skills and learning more about how biochemical research can contribute to our understanding of human health and disease. Outside of academics, I enjoy playing video games, baking, and trying new foods!",
   },
   
