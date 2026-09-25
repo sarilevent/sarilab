@@ -17,7 +17,7 @@ export const people = [
   "I spent approximately nine years as a Senior Research Scientist in the Department of Bioinformatics " +
   "at UT Southwestern Medical Center. At UTSW, my research focused primarily on " +
    "protein aggregation and amyloid formation in neurodegenerative diseases, " +
-   "with Milo Lin and collaboratively with Lukasz Joachimiak " + 
+   "working primarily with Milo Lin and collaboratively with Lukasz Joachimiak " + 
    "and Marc Diamond at the Center for Alzheimer’s and Neurodegenerative Diseases, as well as with Jose Rizo-Rey " +
    "in the Department of Biophysics. I continue to collaborate with several of these colleagues on some of the ongoing research projects.",
    interests: "I like tea, drinking tea, and having tea! Other than this, watching Messi and camping with my family and friends seem to make sense..:)) ",
