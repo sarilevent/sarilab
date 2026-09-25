@@ -33,6 +33,13 @@ export const people = [
     image: "/images/ilayda.jpeg",
     bio: "I am a Ph.D. student in the Biology and Biochemistry program at the University of Houston. I received my B.S. in Biology from Hacettepe University and my M.Sc. in Biotechnology at Ankara University. My master’s research focused on targeting glutamine metabolism by developing monoclonal and chimeric antibodies against the glutamine transporter ASCT2 and investigating their effects on tumor cell growth. I am now expanding my research into computational protein science in the Sari Lab, exploring protein structure and dynamics in the context of neurodegenerative diseases. Outside the lab, you’ll probably find me somewhere online as TheProteinBender or writing stories and building fictional worlds, because apparently the world we live in isn’t enough..",
   },
+
+     {
+    name: "Sara Laroussi",
+    role: "Undergraduate Student",
+    image: "/images/sara.jpeg",
+    bio: "I am an undergraduate biochemistry student at the University of Houston. I am interested in developing my computational and experimental research skills and learning more about how biochemical research can contribute to our understanding of human health and disease. Outside of academics, I enjoy playing video games, baking, and trying new foods!",
+  },
   
   {
     name: "Postdoctoral Researcher",
