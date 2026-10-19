@@ -21,7 +21,7 @@ export const site = {
     "3517 Cullen Blvd, Room 4024",
     "Houston, Texas 77204-5001",
   ],
-  departmentPhone: "713-743-4645",
+  departmentPhone: "713-743-5058",
 };
 
 export const nav = [
