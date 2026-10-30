@@ -44,14 +44,14 @@ export const people = [
       {
     name: "Ali Alrubaee",
     role: "Undergraduate Student",
-    image: "/images/Ali.png",
+    image: "/images/Ali-Alrubea.png",
     bio: "I am an undergraduate Biology student at the University of Houston, pursuing a B.S. in Biology with a minor in Psychology. I am interested in developing my research skills and gaining a deeper understanding of the biological mechanisms underlying human health and disease. My academic interests include molecular biology, biochemistry, and biomedical research, with the long-term goal of pursuing a career in medicine. Outside of academics, I enjoy watching shows, playing video games, spending time with friends and family, and exploring new interests.",
   },
   
      {
     name: "Alia Maknojiya",
     role: "Undergraduate Student",
-    image: "/images/Alia.png",
+    image: "/images/Alia-Maknojia.jpeg",
     bio: "I am a B.S. Biology undergraduate at the University of Houston, curious about molecular mechanisms, biological processes, and disease. I am particularly intrigued by how protein behavior and aggregation contribute to neurodegenerative disorders by altering cellular function. I am eager to expand my scientific knowledge, particularly by exploring how molecular research can deepen our understanding of complex diseases. Beyond academics, I love baking, dancing, and laughing!",
   },
  /* 
